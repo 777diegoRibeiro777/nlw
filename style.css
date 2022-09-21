@@ -24,7 +24,6 @@ body {
 
 header {
   margin-top: 3.2rem;
-  height: calc(12rem + 3.2rem);
 }
 
 header div {
@@ -43,7 +42,7 @@ header img {
 }
 
 main {
-  max-width: 58rem;
+  max-width: 36rem;
   width: 90%;
   margin: 3.2rem auto;
   display: flex;
@@ -54,7 +53,7 @@ main {
 section {
   padding-top: 4px;
   background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-  border-radius: 1rem;
+  border-radius: 1.1rem;
 }
 
 main section {
@@ -76,11 +75,10 @@ main section:nth-child(3) {
 .cards {
   background: #2A2634;
   border-radius: 8px;
-  width: 58rem;
   padding: 2.4rem 3.2rem;
 }
 
-ul {
+section ul {
   display: flex;
   gap: 1.6rem;
   list-style: none;
@@ -93,6 +91,10 @@ ul li {
 
 ul li:hover {
   transform: scale(1.1);
+}
+
+a {
+  padding-right: 1.6rem;
 }
 
 section h2 {
@@ -139,4 +141,14 @@ section p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Swiper */
+section {
+  overflow: hidden;
+}
+
+section ul {
+  flex-wrap: nowrap;
+  gap: 0;
 }
